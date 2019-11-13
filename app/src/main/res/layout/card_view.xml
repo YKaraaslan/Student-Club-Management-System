@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4.0dip"
+    app:cardCornerRadius="4.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="4.0dip">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:padding="2.0dip"
+            app:srcCompat="@drawable/ic_karsav"
+            tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toEndOf="@+id/image_view"
+            android:layout_toRightOf="@+id/image_view"
+            android:text="@string/recycle_title_for_all"
+            android:textColor="@android:color/black"
+            android:textSize="20.0sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view1"
+            android:layout_marginStart="8.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_toEndOf="@+id/image_view"
+            android:layout_toRightOf="@+id/image_view"
+            android:text="@string/recycle_text_for_all"
+            android:textSize="15.0sp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

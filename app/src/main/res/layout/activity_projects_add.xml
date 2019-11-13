@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ProjectsAdd">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/project"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/label"
+                android:drawableLeft="@drawable/label"
+                android:drawablePadding="15dp"
+                android:hint="@string/projects_name"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <AutoCompleteTextView
+                android:id="@+id/project_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/responsible"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="15dp"
+                android:hint="@string/projects_admin"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/projects_members"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:drawableStart="@drawable/people"
+                android:drawablePadding="12dp"
+                android:focusable="false"
+                android:gravity="top"
+                android:hint="@string/projects_members"
+                android:lines="5" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/projects_explanation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:drawableStart="@drawable/description"
+                android:drawablePadding="12dp"
+                android:gravity="top"
+                android:hint="@string/projects_explanation"
+                android:lines="8"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

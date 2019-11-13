@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#d00000</color>
+    <color name="colorPrimary">#ff23283a</color>
+    <color name="colorPrimaryDark">#1D2130</color>
+    <color name="orange">#ffff8c00</color>
+    <color name="pwd">#ff39b6f1</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="turquoise">#ff00e6ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="grey">#F6F6F6</color>
+    <color name="divider">#B9E0E0E0</color>
+    <color name="notification_blue">#1c1364</color>
+    <color name="greyFull">#F5F5F5</color>
+    <color name="red">#d00000</color>
+</resources>

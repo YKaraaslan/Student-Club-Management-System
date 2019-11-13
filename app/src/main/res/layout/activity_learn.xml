@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Learn">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/learn_more"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/karsav_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/karsav"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/learn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/app_name"
+                android:textColor="@color/md_black_1000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/whoAreWe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/learn_more_title"
+                android:textColor="@color/md_black_1000"
+                android:textSize="33.0sp" />
+
+            <TextView
+                android:id="@+id/whoAreWeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15.0dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/learn_more_explanation"
+                android:textColor="@color/md_black_1000"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/ourMission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/learn_more_text"
+                android:textColor="@color/md_black_1000"
+                android:textSize="33.0sp" />
+
+            <TextView
+                android:id="@+id/ourMissionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/learn_more_text_two"
+                android:textColor="@color/md_black_1000"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/ourVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/learn_more_titled"
+                android:textColor="@color/md_black_1000"
+                android:textSize="33.0sp" />
+
+            <TextView
+                android:id="@+id/ourVisionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15.0sp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/learn_more_explanationd"
+                android:textColor="@color/md_black_1000"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/ourAims"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/learn_more_textd"
+                android:textColor="@color/md_black_1000"
+                android:textSize="33.0sp" />
+
+            <TextView
+                android:id="@+id/ourAimsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15.0sp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/learn_more_text_twod"
+                android:textColor="@color/md_black_1000"
+                android:textSize="15.0sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/socialMedia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/social_media_accounts"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="25.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/ic_facebook"
+                        android:clickable="true"
+                        android:contentDescription="@string/separator"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/ic_instagram"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/karsav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/ic_karsav"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/ic_twitter"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true" />
+
+                    <ImageView
+                        android:id="@+id/linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_linkedin"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_style_3"
+                android:text="@string/back"
+                android:textColor="@color/red" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

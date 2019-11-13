@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MeetUpsShow">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/detail"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/meetups_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/nav_header_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/md_black_1000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/linear_creator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/creatorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:drawableStart="@drawable/creator"
+                    android:drawableLeft="@drawable/creator"
+                    android:drawablePadding="15dp"
+                    android:text="@string/creator"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_creator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/topicTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/subject"
+                    android:drawableLeft="@drawable/subject"
+                    android:drawablePadding="15dp"
+                    android:text="@string/topic"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:autoLink="web"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contentTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/content"
+                    android:drawableLeft="@drawable/content"
+                    android:drawablePadding="15dp"
+                    android:text="@string/content"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:autoLink="all"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/date"
+                    android:drawableLeft="@drawable/date"
+                    android:drawablePadding="15dp"
+                    android:text="@string/date"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_decisions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/decisionsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/decision"
+                    android:drawableLeft="@drawable/decision"
+                    android:drawablePadding="15dp"
+                    android:text="@string/decisions"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_decisions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:autoLink="all"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_invitees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/inviteesTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/people"
+                    android:drawableLeft="@drawable/people"
+                    android:drawablePadding="15dp"
+                    android:text="@string/invitees"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/meetups_invitees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

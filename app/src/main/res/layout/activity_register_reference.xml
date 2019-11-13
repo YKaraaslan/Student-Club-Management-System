@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterReferenceAdd">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/addreference"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/name"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="15dp"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/name"
+                android:drawableLeft="@drawable/name"
+                android:drawablePadding="15dp"
+                android:hint="@string/surname"
+                android:inputType="textPersonName"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:autoLink="phone"
+                android:drawableStart="@drawable/phone"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="15dp"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/gmail"
+                android:drawableLeft="@drawable/gmail"
+                android:drawablePadding="15dp"
+                android:hint="@string/mail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/institution"
+                android:drawableLeft="@drawable/institution"
+                android:drawablePadding="15dp"
+                android:hint="@string/institution"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/portfolio"
+                android:drawableLeft="@drawable/portfolio"
+                android:drawablePadding="15dp"
+                android:hint="@string/profession"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <AutoCompleteTextView
+                android:id="@+id/reference_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/creator"
+                android:drawableLeft="@drawable/creator"
+                android:drawablePadding="15dp"
+                android:hint="@string/reference_person"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableStart="@drawable/description"
+                android:drawableLeft="@drawable/description"
+                android:drawablePadding="15dp"
+                android:hint="@string/explanation"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/open_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/turquoise"
+                    android:padding="10dp"
+                    android:text="@string/open_camera"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/open_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/turquoise"
+                    android:padding="10dp"
+                    android:text="@string/open_gallery"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="@+id/image"
+                    app:layout_constraintStart_toStartOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="@+id/image" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/divider"
+                    android:foregroundGravity="center"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

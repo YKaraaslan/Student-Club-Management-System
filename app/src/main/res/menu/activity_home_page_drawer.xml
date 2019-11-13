@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/social">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_posts"
+                    android:icon="@drawable/posts"
+                    android:title="@string/posts" />
+                <item
+                    android:id="@+id/nav_users"
+                    android:icon="@drawable/ic_users"
+                    android:title="@string/users" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="@string/my_profile" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/club_management">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_registers"
+                    android:icon="@drawable/register"
+                    android:title="@string/register" />
+                <item
+                    android:id="@+id/nav_projects"
+                    android:icon="@drawable/project"
+                    android:title="@string/projects" />
+                <item
+                    android:id="@+id/nav_meetups"
+                    android:icon="@drawable/meetup"
+                    android:title="@string/meetings" />
+                <item
+                    android:id="@+id/nav_assignments"
+                    android:icon="@drawable/assignment"
+                    android:title="@string/duties" />
+                <item
+                    android:id="@+id/nav_finance"
+                    android:icon="@drawable/finance"
+                    android:title="@string/my_finance" />
+            </group>
+        </menu>
+    </item>
+</menu>

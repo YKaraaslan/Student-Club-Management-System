@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".FinanceFirstShow">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/detail"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/finance_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/nav_header_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/md_black_1000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/responsibleTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/responsible"
+                android:drawableLeft="@drawable/responsible"
+                android:drawablePadding="15dp"
+                android:text="@string/responsible"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/finance_responsible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/descriptionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/description"
+                android:drawableLeft="@drawable/description"
+                android:drawablePadding="15dp"
+                android:text="@string/description"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/finance_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:autoLink="all"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/receiptTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/receipt"
+                android:drawableLeft="@drawable/receipt"
+                android:drawablePadding="15dp"
+                android:text="@string/receipt"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/financeImage"
+                    app:layout_constraintEnd_toEndOf="@+id/financeImage"
+                    app:layout_constraintStart_toStartOf="@+id/financeImage"
+                    app:layout_constraintTop_toTopOf="@+id/financeImage" />
+
+                <ImageView
+                    android:id="@+id/financeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/divider"
+                    android:foregroundGravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

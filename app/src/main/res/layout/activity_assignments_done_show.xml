@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AssignmentsDoneShow">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/detail"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/assignments_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/nav_header_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/md_black_1000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/creatorHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/creator"
+                android:drawableLeft="@drawable/creator"
+                android:drawablePadding="15dp"
+                android:text="@string/creator"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/assignments_creator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/contentHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/content"
+                android:drawableLeft="@drawable/content"
+                android:drawablePadding="15dp"
+                android:text="@string/content"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/assignments_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:autoLink="web|email"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <LinearLayout
+                android:id="@+id/linear_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    android:id="@+id/datesHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:drawableStart="@drawable/date"
+                    android:drawableLeft="@drawable/date"
+                    android:drawablePadding="15dp"
+                    android:text="@string/dates"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/assignments_date_of_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="15dp"
+                    android:text="@string/given_date"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/assignments_date_due"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="15dp"
+                    android:text="@string/due_dated"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+                <TextView
+                    android:id="@+id/assignments_date_saved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawablePadding="15dp"
+                    android:text="@string/date_saved"
+                    android:textColor="@color/md_black_1000"
+                    tools:ignore="Autofill,RtlHardcoded,TextFields" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/returnsHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/returns"
+                android:drawableLeft="@drawable/returns"
+                android:drawablePadding="15dp"
+                android:text="@string/returns"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/assignments_returns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:autoLink="all"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

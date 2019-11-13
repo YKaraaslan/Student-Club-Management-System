@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".RegisterReferenceAdd">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/detail"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/nav_header_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/md_black_1000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/explanationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/description"
+                android:drawableLeft="@drawable/description"
+                android:drawablePadding="15dp"
+                android:text="@string/explanation"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:autoLink="all"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorLink="@color/orange"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/institutionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/institution"
+                android:drawableLeft="@drawable/institution"
+                android:drawablePadding="15dp"
+                android:text="@string/institution"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/professionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/portfolio"
+                android:drawableLeft="@drawable/portfolio"
+                android:drawablePadding="15dp"
+                android:text="@string/profession"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/phoneNumberTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/phone"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="15dp"
+                android:text="@string/phone_number"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:autoLink="phone"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorLink="@color/orange"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/mailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/gmail"
+                android:drawableLeft="@drawable/gmail"
+                android:drawablePadding="15dp"
+                android:text="@string/mail"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:autoLink="email"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorLink="@color/orange"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/referenceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/creator"
+                android:drawableLeft="@drawable/creator"
+                android:drawablePadding="15dp"
+                android:text="@string/reference_person"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <TextView
+                android:id="@+id/reference_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="15dp"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/photoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/camera"
+                android:drawableLeft="@drawable/camera"
+                android:drawablePadding="15dp"
+                android:text="@string/reference_photo"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/refImage"
+                    app:layout_constraintEnd_toEndOf="@+id/refImage"
+                    app:layout_constraintStart_toStartOf="@+id/refImage"
+                    app:layout_constraintTop_toTopOf="@+id/refImage" />
+
+                <ImageView
+                    android:id="@+id/refImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/divider"
+                    android:foregroundGravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

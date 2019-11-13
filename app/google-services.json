@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1062944737143",
+    "firebase_url": "https://karsav-kbu.firebaseio.com",
+    "project_id": "karsav-kbu",
+    "storage_bucket": "karsav-kbu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062944737143:android:b1fb67ae040145e9",
+        "android_client_info": {
+          "package_name": "org.karsav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062944737143-77a9r2c9p23bmpoad7288nvasm15e8dd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.karsav",
+            "certificate_hash": "bb19679f8ff2b794f2299618a6f4f6fbe7c309ce"
+          }
+        },
+        {
+          "client_id": "1062944737143-17kg5rs9clsfnrlqgki09i65u6e9h111.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.karsav",
+            "certificate_hash": "be41f9498c60b83de79e5c1c4560264073672a16"
+          }
+        },
+        {
+          "client_id": "1062944737143-tpqmoo5qeinufg95q70j0flj9gn21s9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBPAhNwy27Mb_9cIh8tgWWZRjpEGIZy3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062944737143-tpqmoo5qeinufg95q70j0flj9gn21s9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

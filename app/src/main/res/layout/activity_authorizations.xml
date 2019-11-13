@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ProfileAuthorizations">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/my_authorizations"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/karsav_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/karsav"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/karsav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/app_name"
+                android:textColor="@color/md_black_1000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:id="@+id/kayit_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/kayit_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/kayit_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/proje_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/projectsDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/proje_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/proje_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/top_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayMeetups"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/top_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/top_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/gorev_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayAssignments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/gorev_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/gorev_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/uye_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayMembers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/uye_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/uye_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/grv_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayOfficial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/grv_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/grv_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ref_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayReference"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/ref_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ref_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/tum_proje_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayAllProjects"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/tum_proje_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tum_proje_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/tum_top_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayAllMeetups"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/tum_top_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tum_top_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/tum_gorev_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayAllAssignments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/tum_gorev_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tum_gorev_goView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/maliye_go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/displayFinance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/maliye_go"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/maliye_goView"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/uye_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerMember"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/uye_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/uye_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/grv_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerOfficial"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/grv_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/grv_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ref_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerReference"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/ref_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ref_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/proje_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerProject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/proje_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/proje_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/top_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerMeetups"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/top_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/top_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/gorev_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerAssignments"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/gorev_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/gorev_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/maliye_kay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/registerFinance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="4"
+                    android:text="@string/maliye_kay"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_done_all_green_24dp"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/maliye_kayView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

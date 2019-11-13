@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="about_app">Application</string>
+    <string name="about_app_text">"\t\t\tKAR-SAV Automation Application was created by KAR-SAV members within the KAR-SAV Software Team in order to facilitate communication between the club members and the club management as well as the club's business management.
+        \n\n\t\t\tAll of your information within the club's automation system can only be displayed by our software developers in order to improve our application. No one other than the members responsible for the database, including the software team, is authorized to access your information.
+        \n\n\t\t\tUpdates are published in order to make our application more useful. Stability improvements have been made with the published updates as well as visual enhancements. It is recommended to use the current version to get the most out of the application."</string>
+    <string name="about_karsav">KAR-SAV</string>
+    <string name="action_settings">Settings</string>
+    <string name="apk_download" translatable="false">https://drive.google.com/drive/folders/1stSWQKtQ81oy3aUiID77tdCYoNpOjfAZ</string>
+    <string name="app_name">KAR-SAV</string>
+    <string name="assignment_all">New Assignments</string>
+    <string name="assignment_done">All Assignments</string>
+    <string name="assignment_mine">My Assignments</string>
+    <string name="back">Go Back</string>
+    <string name="check_text">Remember Me</string>
+    <string name="clickOneMoreTimeToExit">Click back again to exit</string>
+    <string name="connection_failed">Please Check Your Internet Connection</string>
+    <string name="default_notification_channel_id">CHANNEL_1</string>
+    <string name="department">Faculty - Department</string>
+    <string name="duties">Assignments</string>
+    <string name="finance_log">Log List</string>
+    <string name="finance_log_list">Log List</string>
+    <string name="finance_nothing_found">Nothing Found</string>
+    <string name="finance_report">Report</string>
+    <string name="finance_report_list">Report List</string>
+    <string name="firestore_database_for_posts" translatable="false">Posts</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_popup_head">Password Renewal System</string>
+    <string name="fragment_assignments_all_nothing">No Assignment Found</string>
+    <string name="fragment_meetups_nothing">No Meetups Found</string>
+    <string name="homepage_exit_no">NO</string>
+    <string name="homepage_exit_yes">YES</string>
+    <string name="homepage_sure">Are you sure you want to exit?</string>
+    <string name="learn_more">\u0009Get Information\u0009</string>
+    <string name="learn_more_explanation">\u0009\u0009\u0009KAR-SAV is a student club founded on 7.10.2017 by Karabük University students in order to increase the awareness of the defense industry and to increase the work done in this field.</string>
+    <string name="learn_more_explanationd">\u0009\u0009\u0009It is to prepare an efficient working environment by supporting the ideas and projects of the people who are studying at our university and want to improve themselves in the field of Defense Technologies.</string>
+    <string name="learn_more_text">Our Mission</string>
+    <string name="learn_more_text_two">"\u0009\u0009\u0009KAR-SAV is composed of students who are gathered together to carry the heritage of Ataturk, in the most beautiful way, a step further and the flag he left us, students who hug Ataturk's principles and reforms, who indigenize patriotism within the limit of morals, who want to improve themselves in the field and who try to learn the Defence Industry that is of capital importance for both Turkey and the world economy. It will provide its young and dynamic structure with a growing network of students alongside the skeleton crew. It supports students with projects, activities and working groups considering their technical and personal development."</string>
+    <string name="learn_more_text_twod">\u0009\u0009\u0009Our aim is to ensure our students who are studying at our university and who want to improve themselves in the field of Defense Industry under a single roof; To introduce Turkish Defense Industry and its examples at our university and our city; To create a community that can be a reference to our friends who graduated from our university</string>
+    <string name="learn_more_textd">Our Aims</string>
+    <string name="learn_more_title">Who Are We?</string>
+    <string name="learn_more_titled">Our Vision</string>
+    <string name="log_out">Log Out</string>
+    <string name="login_button">Login</string>
+    <string name="mail">E-mail</string>
+    <string name="mainactivity_blank">Please Fill in the Blanks Properly</string>
+    <string name="mainactivity_connection">Please check your internet connection</string>
+    <string name="mainactivity_progress_message">Please Wait</string>
+    <string name="mainactivity_progress_title">Signing In</string>
+    <string name="mainactivity_welcome">Welcome!</string>
+    <string name="mainactivity_wrong">Incorrect ID or Password</string>
+    <string name="meetings">Meet-ups</string>
+    <string name="menu_about">About</string>
+    <string name="my_authorizations">Authorizations</string>
+    <string name="my_finance">Finance</string>
+    <string name="my_profile">Profile</string>
+    <string name="my_projects">My Projects</string>
+    <string name="my_projects_none">No Projects Found</string>
+    <string name="name_surname">Name Surname</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">Position</string>
+    <string name="nav_header_title">Name Surname</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="new_version_available">New Version Available</string>
+    <string name="new_version_text">We recommend you to use the newest version to get the most out of the application.</string>
+    <string name="ok">OK</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="post_create_blank">You can not send an empty post</string>
+    <string name="post_create_text">Input Your Text Here</string>
+    <string name="post_delete_dialog_message">Deletion is permanent</string>
+    <string name="post_delete_dialog_title">Are you sure to delete?</string>
+    <string name="post_deleted_succesfully">Post Deleted!</string>
+    <string name="post_not_deleted">Post could not be deleted</string>
+    <string name="post_updated_succesfully">Post update is successful</string>
+    <string name="posts">Posts</string>
+    <string name="post_create_bar_title">Create A Post</string>
+    <string name="projects">Projects</string>
+    <string name="projects_my_project_list">My Projects</string>
+    <string name="projects_none">No Projects Found</string>
+    <string name="projects_project_list">Projects</string>
+    <string name="recycle_text_for_all">Text</string>
+    <string name="recycle_title_for_all">Title</string>
+    <string name="register">Registers</string>
+    <string name="register_none">No Registration Found</string>
+    <string name="register_official_list">Official</string>
+    <string name="register_references">References</string>
+    <string name="register_user_list">User List</string>
+    <string name="search_menu_title" tools:ignore="PrivateResource">Search</string>
+    <string name="search_menu_titles">Search</string>
+    <string name="separator">------------------------------</string>
+    <string name="sign_up">Don\'t have an account yet? Sign up!</string>
+    <string name="sign_up_blank">Please Fill in the Blanks Properly</string>
+    <string name="social_media_accounts">Our Social Media Accounts</string>
+    <string name="tab_meetup_text_2">All Meetups</string>
+    <string name="tab_meetup_text_3">Attended</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="time_invalid">---,--:--</string>
+    <string name="title_activity_home_page">KAR-SAV</string>
+    <string name="todo">TODO</string>
+    <string name="update">Update</string>
+    <string name="user">User Id</string>
+    <string name="new_message">A new post has just been shared.</string>
+    <string name="this_version">Current Version: %1$s</string>
+    <string name="update_for">Update is For: %1$s</string>
+    <string name="aviation">Aviation</string>
+    <string name="ground">Ground</string>
+    <string name="marine">Marine</string>
+    <string name="cyber">Cyber</string>
+    <string name="member">Member</string>
+    <string name="officials">Officials</string>
+    <string name="admin">Project Manager</string>
+    <string name="description">Description</string>
+    <string name="creator">Creator</string>
+    <string name="content">Content</string>
+    <string name="topic">Topic</string>
+    <string name="decisions">Decisions</string>
+    <string name="invitees">Invitees</string>
+    <string name="given_date">Date of Issue: %1$s</string>
+    <string name="given_dates">Date of Issue</string>
+    <string name="due_dated">Due Date: %1$s</string>
+    <string name="due_dates">Due Date</string>
+    <string name="date_saved">Date Saved: %1$s</string>
+    <string name="date_saveds">Date Saved</string>
+    <string name="returns">Returns</string>
+    <string name="dates">Dates</string>
+    <string name="responsible">Individual Responsible</string>
+    <string name="receipt">Receipt</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="share">Share The App</string>
+    <string name="invitation_message">KAR-SAV Mobile Automation Application</string>
+    <string name="visit">Visit the APK</string>
+    <string name="download">Download</string>
+    <string name="posts_for_subscription" translatable="false">Posts</string>
+    <string name="post_shared">Post is shared</string>
+    <string name="add_member">Add Member</string>
+    <string name="add_reference">Add Reference</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="institution">Institution</string>
+    <string name="profession">Profession</string>
+    <string name="reference_person">Reference Person</string>
+    <string name="addreference">Add Reference</string>
+    <string name="explanation">Explanation</string>
+    <string name="name_surname_empty">Name and surname sections cannot be left blank.</string>
+    <string name="register_reference_progress_title">Adding</string>
+    <string name="register_reference_progress_message">This process may take a while.</string>
+    <string name="reference_added">Reference is added</string>
+    <string name="reference_delete_dialog_title">Are you sure to delete the reference?</string>
+    <string name="reference_delete_dialog_message">Deletion is permanent</string>
+    <string name="reference_yes">DELETE</string>
+    <string name="reference_no" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="reference_add_dialog_text">Would you like to add a new reference?</string>
+    <string name="reference_add_yes">YES</string>
+    <string name="reference_add_no">NO</string>
+    <string name="reference_deleted">Reference is deleted</string>
+    <string name="reference_update_dialog_text">Are you sure to update the reference?</string>
+    <string name="reference_update_yes">YES</string>
+    <string name="reference_update_no">NO</string>
+    <string name="reference_updated">Reference is updated</string>
+    <string name="register_reference_update_progress_title">Updating</string>
+    <string name="register_reference_delete_progress_title">Deleting</string>
+    <string name="refreshed">Refreshed</string>
+    <string name="student_no">Student Number</string>
+    <string name="register_member_add_text">Would you like to add a new member?</string>
+    <string name="register_member_add_yes">ADD</string>
+    <string name="register_member_add_no" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="member_added">Member is added</string>
+    <string name="register_member_delete_title">Are you sure to delete the member?</string>
+    <string name="register_member_delete_text">Deletion is permanent</string>
+    <string name="register_member_delete_text_second">Deletion is permanent and the member will only be deleted from the Officials section.</string>
+    <string name="register_member_update_text">Are you sure to update the member?</string>
+    <string name="register_member_update_yes">UPDATE</string>
+    <string name="register_member_update_no" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="member_updated">Member is updated</string>
+    <string name="is_official">Official?</string>
+    <string name="kayit_go">Register Display</string>
+    <string name="proje_go">Projects Display</string>
+    <string name="top_go">Display Meetups</string>
+    <string name="gorev_go">Assignments Display</string>
+    <string name="uye_go">Members Display</string>
+    <string name="uye_kay">Register Member</string>
+    <string name="grv_go">Official Display</string>
+    <string name="grv_kay">Register Official</string>
+    <string name="ref_go">Reference Display</string>
+    <string name="ref_kay">Register Reference</string>
+    <string name="tum_proje_go">Display All Projects</string>
+    <string name="proje_kay">Register Project</string>
+    <string name="tum_top_go">Display All Meetups</string>
+    <string name="top_kay">Register Meetups</string>
+    <string name="tum_gorev_go">Display All Assignments</string>
+    <string name="gorev_kay">Register Assignments</string>
+    <string name="maliye_go">Display Finance</string>
+    <string name="maliye_kay">Register Finance</string>
+    <string name="position">Position</string>
+    <string name="register_member_update_text_for_switch_negative">This member will be in the Officials section if you accept the changes</string>
+    <string name="register_member_update_text_for_switch_positive">This member will no longer be in the Officials section if you accept the changes</string>
+    <string name="displays">DISPLAYS</string>
+    <string name="registers">REGISTERS</string>
+    <string name="information">INFORMATION</string>
+    <string name="projects_name">Project Name</string>
+    <string name="projects_admin">Project Manager</string>
+    <string name="projects_members">Project Members</string>
+    <string name="projects_explanation">Project Explanation</string>
+    <string name="project_add_text">Would you like to register this projects?</string>
+    <string name="projects_added">Project is registered</string>
+    <string name="projects_progress_title">Project is being registered</string>
+    <string name="projects_progress_message">This process may take a while.</string>
+    <string name="official_deleted">The official is deleted</string>
+    <string name="name_manager_empty">Sections cannot be left blank</string>
+    <string name="add_projects">Add Project</string>
+    <string name="project">Project</string>
+    <string name="projects_delete_dialog_title">Are you sure to delete the project?</string>
+    <string name="projects_delete_dialog_message">Deletion is permanent.</string>
+    <string name="projects_deleted">The project is deleted</string>
+    <string name="update_projects">Update Project</string>
+    <string name="project_update_text">Would you like to update the project?</string>
+    <string name="project_update_progress_title">Updating</string>
+    <string name="project_updated">The project is updated</string>
+    <string name="cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="header_for_my_projects">My Project</string>
+    <string name="date">Date</string>
+    <string name="addmeetupss">Add Meet-up</string>
+    <string name="time">Time</string>
+    <string name="name_empty">Name section cannot be blank</string>
+    <string name="meetup_add_dialog_text">Would you like to register a new meet-up?</string>
+    <string name="meetup_add_yes">CONFIRM</string>
+    <string name="meetup_add_no" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="meetup_added">Meet-up is added</string>
+    <string name="update_meetup">Update Meet-up</string>
+    <string name="meetup_delete_dialog_title">Would you like to delete the meet-up?</string>
+    <string name="meetup_delete_dialog_message">Deletion is permanent</string>
+    <string name="meetup_updated">Meet-up is updated</string>
+    <string name="meetup">Meet-Up</string>
+    <string name="meetup_update_dialog_text">Would you like to update the meet-up?</string>
+    <string name="update_assignments">Update Assignment</string>
+    <string name="category">Category</string>
+    <string name="official_name_surname">Official Name Surname</string>
+    <string name="assignment_name">Assignment Name</string>
+    <string name="assignment_update_dialog_text">Would you like to update the assignment?</string>
+    <string name="assignment_add_yes">CONFIRM</string>
+    <string name="assignment_add_no" tools:ignore="ButtonCase">CANCEL</string>
+    <string name="assignments_last_time">Time</string>
+    <string name="assignment">Assignments</string>
+    <string name="assignment_delete_dialog_title">Would you like to delete the assignment?</string>
+    <string name="assignment_delete_dialog_message">Deletion is permanent</string>
+    <string name="assignment_delete_yes">Delete</string>
+    <string name="assignment_delete_no">Cancel</string>
+    <string name="assignment_delete_progress_title">Deleting</string>
+    <string name="assignment_progress_message">This may take awhile</string>
+    <string name="assignment_deleted">Assignment deleted</string>
+    <string name="assignment_updated">Assignment updated</string>
+    <string name="assignment_done_yes">Finish</string>
+    <string name="assignment_done_no">Cancel</string>
+    <string name="assignment_new_return">Input your report link here</string>
+    <string name="example_dialog">Example Dialog</string>
+    <string name="assignment_done_progress_title">Finishing</string>
+    <string name="assignment_finished">Assignment finished successfully</string>
+    <string name="assignment_done_dialog_title">Returns</string>
+    <string name="add_assignments">Create Assignment</string>
+    <string name="assignment_add_dialog_text">Would you like to create this assignment?</string>
+    <string name="assignment_add_progress_title">Adding</string>
+    <string name="assignment_added">Assignment added successfully</string>
+    <string name="clear_all">Clear All</string>
+    <string name="member_deleted">Member is deleted</string>
+    <string name="like_amount" translatable="false">0</string>
+    <string name="firestore_database_for_likes" translatable="false">Likes</string>
+    <string name="firestore_database_for_comments" translatable="false">Comments</string>
+    <string name="comment_sent">Comment is sent successfully</string>
+    <string name="input_comment_hint">Write something…</string>
+    <string name="like_amount_text">Likes:</string>
+    <string name="comment_of_recyclerview">Comments:</string>
+    <string name="liked_by">Liked By</string>
+    <string name="comment_blank">You cannot send an empty comment</string>
+    <string name="copy">Copy</string>
+    <string name="copied">The text is copied into the clipboard</string>
+    <string name="comment_deleted">Comment is deleted</string>
+    <string name="delete">Delete</string>
+    <string name="check">Check</string>
+    <string name="checking">Checking</string>
+    <string name="wait">Please wait</string>
+    <string name="successful">Successful!</string>
+    <string name="wrong_information">Wrong Information given. Please check all the blanks then try again.</string>
+    <string name="new_password_toolbar">New Password</string>
+    <string name="password_check">Password Check</string>
+    <string name="change_password">Change Password</string>
+    <string name="password_successfully_changed">Your password is successfully changed</string>
+    <string name="passwords_are_different">Passwords are different</string>
+    <string name="password_renewal_contact_us">If your information cannot be checked, contact us by clicking this text!</string>
+    <string name="developer_mail" translatable="false">karaaslan.21@hotmail.com</string>
+    <string name="mail_subject">Password Renewal Problem</string>
+    <string name="mail_text">Hello,
+        \n\nI cannot change my password, please take a look at the issue.
+        \n\nMy name: %1$s
+        \nMy mail: %2$s
+        \nMy phone: %3$s
+        \nMy student number: %4$s
+        \nMy User Id: %5$s
+
+        \n\nKind regards.
+    </string>
+    <string name="choose_email">Choose E-mail</string>
+    <string name="signup_toolbar">Sign Up</string>
+    <string name="interests">INTERESTS</string>
+    <string name="sign_up_button">SIGN UP</string>
+    <string name="yes">YES</string>
+    <string name="sign_up_dialog_text">Do you confirm all the information given here is correct?</string>
+    <string name="password_reset_dialog_text">Do you confirm your new id and password?</string>
+    <string name="choose_at_least_one">You should choose at least one interest</string>
+    <string name="signing_up">Signing Up</string>
+    <string name="signed_up_successfully">Signed Up Successfully!</string>
+    <string name="post">POST</string>
+    <string name="detail">Detail</string>
+    <string name="reference_photo">Reference Photo</string>
+    <string name="finance_delete_dialog_title">Are you sure to delete the finance log?</string>
+    <string name="finance_deleted">Finance log is deleted</string>
+    <string name="finance_name">Individual Responsible</string>
+    <string name="income_or_expense">Income or Expense?</string>
+    <string name="finance_update">Update Finance</string>
+    <string name="finance_add">Add Finance</string>
+    <string name="finance_update_dialog_text">Updating</string>
+    <string name="finance_updated">Finance log is updated</string>
+    <string name="finance_add_progress_title">Finance log is being added</string>
+    <string name="finance_added">Finance log is added</string>
+    <string name="select_income_or_expense">Select income or expense</string>
+    <string name="finance_add_dialog_text">Would you like to add the finance log?</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="select_image">Select Image</string>
+    <string name="photo_empty">Please provide a photo</string>
+    <string name="no_number">-</string>
+    <string name="my_information">My Information</string>
+    <string name="my_assignments">My Assignments</string>
+    <string name="last_login">Last Login: %1$s</string>
+    <string name="firestore_database_for_users" translatable="false">Users</string>
+    <string name="online">Online</string>
+
+    <string-array name="income_expense">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <string name="assignmentsLinear">Assignments Completed: %1$s</string>
+    <string name="projectsLinear">Projects Attended: %1$s</string>
+    <string name="meetupsLinear">Meet-ups Attended: %1$s</string>
+    <string name="postsLinear">Posts Shared: %1$s</string>
+    <string name="likesLinear">Get Liked: %1$s times.</string>
+    <string name="firestore_database_for_likedby" translatable="false">LikedBy</string>
+    <string name="no_assignment_found">You have not finished an assignment yet</string>
+    <string name="no_project_found">You have not made a project yet</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="empty_blanks">All the blanks should be filled</string>
+    <string name="update_profile_text">Would you like to update your information?</string>
+    <string name="updating">Updating</string>
+    <string name="profile_updated">Your profile is updated successfully</string>
+    <string name="your_image">Your Image</string>
+    <string name="firestore_database_for_profile_photos" translatable="false">ProfilePhotos</string>
+    <string name="crop_image">Crop Image</string>
+    <string name="my_posts">My Posts</string>
+    <string name="no_post_found">You have not shared a post yet</string>
+    <string name="notifications">Notifications</string>
+    <string name="notifications_text">When turned off, you will no longer receive notifications when a new post is shared. Yet, this does not completely prevents this app from showing notifications.</string>
+    <string name="text_size">Text Size</string>
+    <string name="version_control">Version Control</string>
+    <string name="notifications_enabled">Notifications will be enabled</string>
+    <string name="notifications_disabled">Notifications will be disabled</string>
+    <string name="text_size_small">Small</string>
+    <string name="text_size_medium">Medium</string>
+    <string name="text_size_large">Large</string>
+    <string name="text_size_for_settings" translatable="false">textSize</string>
+    <string name="setting_applied">Setting are applied</string>
+    <string name="club_management">Club Management</string>
+    <string name="social">Social Network</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="location">Karabuk University Engineering Faculty, Z-37.</string>
+    <string name="mail_one" translatable="false">karabuksavunma@gmail.com</string>
+    <string name="mail_two" translatable="false">bilgi@karsav.org</string>
+    <string name="show_more">\t…show more</string>
+    <string name="show_less">\tshow less</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="firestore_database_for_post_photos" translatable="false">PostPhotos</string>
+    <string name="update_post">Update Post</string>
+    <string name="about">About</string>
+    <string name="user_profile">User Profile</string>
+    <string name="status_empty">The user has not written anything about them yet.</string>
+    <string name="offline">Offline</string>
+    <string name="status_left_empty">You can not leave your status empty</string>
+    <string name="updated">Updated</string>
+    <string name="firestore_database_for_status" translatable="false">Status</string>
+    <string name="status">Status</string>
+    <string name="users">Users</string>
+    <string name="meetup_deleted">Meetup Deleted</string>
+
+</resources>

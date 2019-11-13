@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AssignmentsNewUpdate">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:logo="@drawable/ic_chevron_left_black_24dp"
+        app:title="@string/assignment"
+        app:titleMarginStart="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/karsav"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/karsav"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/official_name_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/student"
+                android:drawableLeft="@drawable/student"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:hint="@string/official_name_surname"
+                android:inputType="textPersonName"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/assignment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/assignment"
+                android:drawableLeft="@drawable/assignment"
+                android:drawablePadding="15dp"
+                android:hint="@string/assignment_name"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/category"
+                android:drawableLeft="@drawable/category"
+                android:drawablePadding="15dp"
+                android:hint="@string/category"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:drawableStart="@drawable/content"
+                android:drawableLeft="@drawable/content"
+                android:drawablePadding="15dp"
+                android:gravity="top|start"
+                android:hint="@string/content"
+                android:lines="5"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/assignments_date_of_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/date_of_issue"
+                android:drawableLeft="@drawable/date_of_issue"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:hint="@string/given_dates"
+                android:inputType="date"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/assignments_date_due"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/due_date"
+                android:drawableLeft="@drawable/due_date"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:hint="@string/due_dates"
+                android:inputType="date"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+
+            <EditText
+                android:id="@+id/assignments_last_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/time"
+                android:drawableLeft="@drawable/time"
+                android:drawablePadding="15dp"
+                android:focusable="false"
+                android:hint="@string/assignments_last_time"
+                android:inputType="datetime"
+                android:textColor="@color/md_black_1000"
+                tools:ignore="Autofill,RtlHardcoded,TextFields" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

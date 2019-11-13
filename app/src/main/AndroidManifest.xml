@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.karsav">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.karsav.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".UserProfileFromUserList"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".UserProfileAboutUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".UserProfileFromPosts"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".Settings" />
+        <activity
+            android:name=".ContactUs"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProfilePosts"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ProfileUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProfileProjects"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProfileAssignments"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProfileAuthorizations"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".FinanceUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".PasswordResetNewPassword"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".PasswordReset"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".LikeShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AssignmentsAdd"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AssignmentsNewUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AssignmentsNewShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AssignmentsDoneUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".MeetUpsMineShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".MeetUpsUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".MeetUpsAdd"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProjectsMyProjectUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProjectsUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProjectsAdd"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterOfficialUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterMemberUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterMemberAdd"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterReferenceUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterReferenceShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterReferenceAdd"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".Update"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".FinanceAdd"
+            android:authorities="${applicationId}"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".FinanceFirstShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".FinanceSecondShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AssignmentsDoneShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".MeetUpsShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProjectsShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".ProjectsMyProjectShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterMemberShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".RegisterOfficialShow"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".PostUpdate"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".AboutApp"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".Learn"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".PostCreate"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".PostShow"
+            android:hardwareAccelerated="true"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.SlidrActivityTheme" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoggedDataBase" />
+
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_karsav_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_blue" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
