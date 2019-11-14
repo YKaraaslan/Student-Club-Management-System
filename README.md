@@ -16,3 +16,7 @@ Meet-ups section is for all the scheduled meetups including upcoming ones, and t
 Assignments are showing the information of the ones in progress as well as the ones already done. Users can also see their assignments there.
 
 Finance is to manage every cost including their receipts.
+
+Windows application for the management system: https://github.com/furkan-34/Klup-Otomasyon-Sistemi
+
+For all the questions: karaaslan.21@hotmail.com
