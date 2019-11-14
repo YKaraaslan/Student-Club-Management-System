@@ -7,7 +7,7 @@ Every member has also got a profile page where they can see their status, set th
 
 Depending on the authorizations, there are other sections like registers, projects, meet-ups, assignments and finance.
 
-In the Register section, again depending or your authorization given by the head of the club management, you can see the information of all the members as well as those whom are heading. The third and the last tab belongs to the references, who can help the club out with any sort of needs.
+In the Register section, again depending on your authorization given by the head of the club management, you can see the information of all the members as well as those whom are heading. The third and the last tab belongs to the references, who can help the club out with any sort of needs.
 
 In the project tab, there is the information of the projects worked on by the selected members.
 
@@ -17,6 +17,6 @@ Assignments are showing the information of the ones in progress as well as the o
 
 Finance is to manage every cost including their receipts.
 
-Windows application for the management system: https://github.com/furkan-34/Klup-Otomasyon-Sistemi
+Windows application of the management system: https://github.com/furkan-34/Klup-Otomasyon-Sistemi
 
 For all the questions: karaaslan.21@hotmail.com
