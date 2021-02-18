@@ -1,3 +1,7 @@
+This is one of the first projects I carried out when I was a student. For this reason, this rudimental app is no longer maintained and is deprived of current technologies.
+
+---
+
 # Student-Club-Management-System
 With this Android management project, it is now easier for the head of student clubs to manage their projects as well as lead their members. What can you do with this application?
 
